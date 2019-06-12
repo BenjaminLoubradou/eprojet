@@ -34,9 +34,10 @@ function eprojet_init_widgets(){
 add_action('widgets_init','eprojet_init_widgets');
 
 // création des zones de menus
-function eprojet_init_menu(){
+function eprojet_init_menus(){
     // on crée une zone de menu d'identifiant "primary" et de nom dans le BO "menu principal"
     register_nav_menu('primary','menu principal');
+    register_nav_menu('secondary','menu footer droite');
 }
 
 // on exécute notre fonction  appelée "eprojet_init_menus" dans le hook "init" de WP qui correspond au moment où le CMS s'initialise.

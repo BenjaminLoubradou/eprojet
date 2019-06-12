@@ -92,3 +92,10 @@ if ( !defined('ABSPATH') )
 
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
 require_once(ABSPATH . 'wp-settings.php');
+
+// ** Permettre a Wordpress de traverser le proxy ** //
+define('WP_PROXY_HOST', '172.16.104.254');
+define('WP_PROXY_PORT', '3128');
+define('WP_PROXY_USERNAME', 'lutilisateur');
+define('WP_PROXY_PASSWORD', 'sonpassword');
+define('WP_PROXY_BYPASS_HOSTS', 'localhost, 172.16.0.0/16, 127.0.0.0/8');

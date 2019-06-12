@@ -11,7 +11,12 @@
                             <p>&copy; Mes petites annonces - 2019</p>
                         </div>
                         <div class="col-lg-4">
+                            <?php wp_nav_menu(array(
+                                'theme_location'   =>'secondary', // identifiant du menu dans functions.php
+                                'menu_class'       =>'navbar-nav',
+                                // on ajoute une ou plusieur class css(bootstrap)
 
+                            )) ?>
                         </div>
                     </div>
                 </div>

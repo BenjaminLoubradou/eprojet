@@ -37,7 +37,8 @@
                                 <!-- menu de navigation -->
                                 <?php wp_nav_menu(array(
                                     'theme_location'   =>'primary', // identifiant du menu dans functions.php
-                                    'menu_class'       =>'nav-bar nav', // on ajoute une ou plusieur class css(bootstrap)
+                                    'menu_class'       =>'navbar-nav',
+                                    // on ajoute une ou plusieur class css(bootstrap)
 
                                 )) ?>
                             </div>
